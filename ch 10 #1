@@ -1,0 +1,6 @@
+def sumOfCubes(xs):
+    a = 0
+    for i in xs:
+        a += i**3
+    return a
+print(sumOfCubes([2, 3, 4]))

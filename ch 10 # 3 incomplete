@@ -1,0 +1,20 @@
+import random
+
+def average(numList):
+    a = 0 
+    for i in range(len(numList)):
+        a += i
+    
+    return a/(len(numList)      
+
+def makeRandRange(numVals, start, end, seed=None):
+    random.seed(seed) 
+    new = []
+    for i in range(numVals):
+        a = random.randrange(start, end+1)
+        new.append(a)
+    return average(new)
+   
+
+
+print(makeRandRange( 3 , 1, 5))

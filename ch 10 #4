@@ -1,0 +1,25 @@
+# My Name: Bryan Su
+
+def countUpToWord(lst, word):
+    newlist = []
+    f = False
+    for i in lst:
+        if i != word:
+            newlist.append(i)
+        elif i == word:
+            break
+    for i in lst:        
+        if i == word:
+            f = True
+    if f == True:   
+        return len(newlist)+1
+    else:
+        return -1
+   
+    
+    
+print(countUpToWord([1, 2,3,4,5], 0))
+print(countUpToWord([1, 2,3,4,5], 1))
+print(countUpToWord([1, 2,3,4,5], 3))
+print(countUpToWord([1, 2,3,4,5], 5))
+        

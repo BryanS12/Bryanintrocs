@@ -1,0 +1,11 @@
+# My Name: Bryan Su
+
+def replace(lst, old, new):
+    n = []
+    for i in lst:
+        if i == old:
+            n.append(new)
+        elif i != old:
+            n.append(i)
+    return n
+print(replace([1,2, 3, 2, 4],2,6))

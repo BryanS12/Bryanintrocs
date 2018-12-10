@@ -1,0 +1,11 @@
+#Write a function replaceMutator(lst, old, new) that replaces all occurrences of the element old with new in
+#the list lst. For this mutating function, it will not return any list, but instead it will change the lst itself.
+
+def replaceMutator(lst, old, new):
+  for i in range(len(lst)):
+    if old == lst[i]:
+      lst[i] = new
+  return lst
+  
+print(replaceMutator([1 ,2 , 1, 3], 1 , 2))
+print(replaceMutator([1 ,2 , 1, 3], 3 , 2))

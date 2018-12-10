@@ -1,0 +1,27 @@
+#Write a function called makeRandRange(numVals, start, end, seed=None) that creates and returns a list containing a specified number of 
+random integers in a range between start (inclusive) and end (exclusive) (use iteration, append, and the random module).
+
+#NOTE: The parameter seed is an optional parameter. In your own code, you do not need to provide the 4th parameter seed when you call the 
+function. It is OK to just call the function as makeRandRange(numVals, start, end).
+
+#Write another function called average that will take the list created by makeRandRange (or any list of numbers in fact…) as a parameter 
+and return its average. def average(numList):
+   
+    a= 0 
+    for i in numList:
+        a += i
+    l = a/len(numList)
+    
+    return l      
+
+def makeRandRange(numVals, start, end, seed=None):
+    random.seed(seed) 
+    new = []
+    for i in range(numVals):
+        a = random.randrange(start, end)
+        new.append(a)
+    return new
+   
+
+
+print(makeRandRange( 20 , 1, 5))

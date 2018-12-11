@@ -1,0 +1,18 @@
+# My Name:
+
+def cross_product(u, v):
+    n = []
+    if len(u)==len(v) and len(u)!=0:
+        a = (u[1]*v[2]) - (u[2]*v[1])
+        b = (u[2]*v[0])-(u[0]*v[2])
+        c = (u[0]*v[1])-(u[1]*v[0])
+        n.append(a)
+        n.append(b)
+        n.append(c)
+        return n
+    else:
+        return 0
+    
+print(cross_product([1 , 2, 3], [1 ,2 ,3]))
+   
+

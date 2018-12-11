@@ -1,0 +1,11 @@
+# My 
+def dot_product(u, v):
+    if len(u)==len(v) and len(u)!=0:
+        a = sum([u[i]*v[i] for i in range(len(u))])
+        return a
+    else:
+        return 0
+
+
+# any test cases you'd like to have
+

@@ -1,0 +1,16 @@
+
+# My Name:
+
+def rotate( lst, num ):
+  
+    if lst == []:
+        return []
+    
+    for i in range(num):
+        lst.append(lst[0])
+        lst.remove(lst[0])
+     
+    return lst
+
+# any test cases you'd like to have
+

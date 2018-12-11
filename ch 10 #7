@@ -1,0 +1,10 @@
+
+def add_vectors(u, v):
+    # your code here!
+    Vec = []
+    if len(u) == len(v):
+        for i in range(len(u)):
+            Vec.append(v[i]+u[i])
+        return Vec
+
+add_vectors([1,2], [2,2])

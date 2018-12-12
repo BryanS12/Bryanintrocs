@@ -1,0 +1,11 @@
+# My Name:
+
+def sumEvenAndDiv3(lst):
+    sum = 0
+    n = []
+    n = [i for i in lst if i%3 == 0 and i%2 == 0]
+    for i in n:
+        sum = sum+ i
+    return sum 
+            
+

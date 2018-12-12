@@ -1,0 +1,17 @@
+def match( lst, pattern, wildcard ):
+    if lst == []:
+        if pattern.count(wildcard) == len(pattern):
+            return True
+        else:
+            return False
+    if len(pattern) < len(lst):
+        return False
+    for idx in range(len(lst)):
+        if pattern[idx] != wildcard:
+            if lst[idx] == pattern[idx]:
+                ans = True
+            else:
+                return False
+        else:
+            return True
+    return a

@@ -1,0 +1,13 @@
+# My Name:
+
+def countWords(lst, length):
+    count = 0
+    n = []
+    n = [i for i in lst if len(str(i)) >= length]
+    for i in n:
+        count += 1
+    return count
+
+print(countWords([1 ,2 ,3, 4] , 3))
+        
+

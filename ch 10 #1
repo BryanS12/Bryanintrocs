@@ -4,3 +4,4 @@ def sumOfCubes(xs):
         a += i**3
     return a
 print(sumOfCubes([2, 3, 4]))
+print("hello world !")
